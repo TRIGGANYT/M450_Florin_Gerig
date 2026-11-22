@@ -12,6 +12,14 @@
         }
 
         [TestMethod]
+        public void AddNegativeNumber()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Add(3, -1);
+            Assert.AreEqual(2, result);
+        }
+
+        [TestMethod]
         public void AddTwoNegativeNumbers()
         {
             Calculator calculator = new Calculator();
