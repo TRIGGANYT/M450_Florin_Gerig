@@ -50,5 +50,13 @@
             int result = calculator.Subtract(-3, -1);
             Assert.AreEqual(-2, result);
         }
+
+        [TestMethod]
+        public void DivideTwoPositiveNumbers()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Divide(4, 2);
+            Assert.AreEqual(2, result);
+        }
     }
 }
