@@ -10,7 +10,8 @@
 
         public int Divide(int a, int b)
         {
-            throw new NotImplementedException();
+            int result = a / b;
+            return result;
         }
 
         public int Multiply(int a, int b)
