@@ -90,5 +90,21 @@
             int result = calculator.Multiply(4, 2);
             Assert.AreEqual(8, result);
         }
+
+        [TestMethod]
+        public void MultiplyTwoNegativeNumbers()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Multiply(-4, -2);
+            Assert.AreEqual(8, result);
+        }
+
+        [TestMethod]
+        public void MultiplyNegativeNumber()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Multiply(-4, 2);
+            Assert.AreEqual(-8, result);
+        }
     }
 }
