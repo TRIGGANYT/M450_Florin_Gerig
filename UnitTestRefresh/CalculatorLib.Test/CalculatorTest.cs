@@ -58,5 +58,29 @@
             int result = calculator.Divide(4, 2);
             Assert.AreEqual(2, result);
         }
+
+        [TestMethod]
+        public void DivideTwoNegativeNumbers()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Divide(-4, -2);
+            Assert.AreEqual(2, result);
+        }
+
+        [TestMethod]
+        public void DivideNegativeNumber()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Divide(-4, 2);
+            Assert.AreEqual(-2, result);
+        }
+
+        [TestMethod]
+        public void DivideByZero()
+        {
+            Calculator calculator = new Calculator();
+
+            Assert.ThrowsExactly<DivideByZeroException>(() => calculator.Divide(4, 0));
+        }
     }
 }
