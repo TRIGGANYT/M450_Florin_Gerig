@@ -27,5 +27,13 @@
             Assert.AreEqual(-4, result);
         }
 
+        [TestMethod]
+        public void SubtractTwoPositiveNumbers()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Subtract(3, 1);
+            Assert.AreEqual(4, result);
+        }
+
     }
 }
