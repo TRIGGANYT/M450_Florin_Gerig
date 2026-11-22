@@ -16,7 +16,8 @@
 
         public int Multiply(int a, int b)
         {
-            throw new NotImplementedException();
+            int result = a * b;
+            return result;
         }
 
         public int Subtract(int a, int b)
