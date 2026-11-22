@@ -35,5 +35,20 @@
             Assert.AreEqual(2, result);
         }
 
+        [TestMethod]
+        public void SubtractNegativeNumber()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Subtract(3, -1);
+            Assert.AreEqual(4, result);
+        }
+
+        [TestMethod]
+        public void SubtractTwoNegativeNumbers()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Subtract(-3, -1);
+            Assert.AreEqual(-2, result);
+        }
     }
 }
