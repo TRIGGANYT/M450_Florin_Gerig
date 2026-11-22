@@ -82,5 +82,13 @@
 
             Assert.ThrowsExactly<DivideByZeroException>(() => calculator.Divide(4, 0));
         }
+
+        [TestMethod]
+        public void MultiplyTwoPositiveNumbers()
+        {
+            Calculator calculator = new Calculator();
+            int result = calculator.Multiply(4, 2);
+            Assert.AreEqual(8, result);
+        }
     }
 }
